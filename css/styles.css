@@ -205,6 +205,7 @@ img {
   margin-right: 30px;
   width: 370px;
   position: relative;
+  justify-content: space-between;
 }
 
 .card-studio:last-child {
@@ -212,6 +213,7 @@ img {
 }
 .section-team {
   background-color: var(--tertiary-color);
+  justify-content: space-between;
 }
 
 .subtitle-team {
@@ -326,16 +328,13 @@ img {
 
 .card-members {
   background-color: var(--secundary-color);
-  margin-right: 30px;
+  margin-left: 30px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   box-shadow: 0 1px 2px 0 #00000020, 0 1px 1px 0 #00000014,
     0 4px 4px 0 #00000025;
 }
 
-.card-members:last-child {
-  margin-right: 0;
-}
 .studio-header {
   color: var(--brand-color);
 }
@@ -583,13 +582,17 @@ img {
   cursor: pointer;
 }
 
+.list-footer {
+  display: flex;
+  justify-content: space-between;
+}
 .find-us {
-  margin-left: 70px;
   color: var(--secundary-color);
 }
 
 .title-footer {
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .circle-footer {
@@ -614,4 +617,52 @@ img {
 .circle-footer:active {
   background-color: var(--color-selected);
   cursor: pointer;
+}
+
+.form-footer {
+  display: flex;
+  align-items: flex-end;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  color: var(--secundary-color);
+  font-weight: 700;
+}
+
+.email {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  background-color: inherit;
+  border: rgba(255, 255, 255, 0.3) solid 1px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1em;
+}
+.email:hover {
+  border-color: var(--color-selected);
+  color: var(--secundary-color);
+}
+
+.form-button {
+  display: flex;
+  height: 50px;
+  width: 200px;
+  margin-left: 12px;
+  background-color: var(--color-selected);
+  color: var(--secundary-color);
+  font-size: 16px;
+  font-weight: 700;
+  fill: var(--secundary-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 39px;
+  padding-right: 28px;
 }
